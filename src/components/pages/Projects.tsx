@@ -1,6 +1,4 @@
 import { useState } from "react";
-import RightArrow from "../../../public/assets/right.svg";
-import LeftArrow from "../../../public/assets/left.svg";
 import { motion, useAnimationControls } from "framer-motion";
 import Project from "../Project";
 
@@ -8,24 +6,10 @@ export const Projects = () => {
   const Flutter = "/assets/flutter.svg";
   const Next = "/assets/Nextjs.svg";
   const Prisma = "/assets/Prisma.svg";
-  const Rest = "assets/rest.png";
+  const Rest = "/assets/rest.png";
   const slideControls = useAnimationControls();
   const [index, setIndex] = useState(0);
 
-  const projectVariants = {
-    initial: { x: 0, opacity: 1 },
-    animateL: {
-      x: [0, -400, 400, 0],
-      opacity: [1, 0, 0, 0, 1],
-      transition: { duration: 1.5, times: [0, 0.25, 0.3, 0.5] },
-    },
-    animateR: {
-      x: [0, 400, -400, 0],
-      opacity: [1, 0, 0, 0, 1],
-      transition: { duration: 1.2, times: [0, 0.25, 0.3, 0.5] },
-    },
-    exit: { x: 0, opacity: 1 },
-  };
   const projectList = [
     <Project
       key="0"
@@ -98,7 +82,9 @@ export const Projects = () => {
 
   return (
     <div className="flex flex-col items-center mt-5 gap-8">
-      <div className="text-3xl under-before relative pb-3">Projects</div>
+      <div className="text-3xl under-before relative pb-3 2xl:text-4xl">
+        Projects
+      </div>
 
       {projectList.map((_elem, index) => {
         return projectList[index];

@@ -17,13 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={inter.className}
-        style={{ backgroundColor: "#E0E1DD", color: "#0D1B2A" }}
-      >
+      <body className={inter.className} style={{ color: "#0D1B2A" }}>
         {" "}
         <NavBar />
-        <div className="max-w-screen-xl px-2.5 md:px-20 mx-auto h-full select-none ">
+        <div className="max-w-screen-xl px-2.5 md:px-20 mx-auto h-full select-none 2xl:max-w-screen-2xl ">
           {children}
         </div>
       </body>

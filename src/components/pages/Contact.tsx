@@ -1,15 +1,9 @@
 import { useRef, useState } from "react";
-
-import {
-  motion,
-  animationControls,
-  useAnimationControls,
-  delay,
-} from "framer-motion";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
-import { text } from "stream/consumers";
+
 const variants = {
   animate: {
     transition: { staggerChildren: 0.5, delayChildren: 1.2 },
@@ -50,7 +44,10 @@ export const Contact = () => {
     setOpen(true);
   };
 
-  const handleClose = (_event: React.SyntheticEvent, reason: string) => {
+  const handleClose = (
+    _event: Event | React.SyntheticEvent<any, Event>,
+    reason: string
+  ) => {
     if (reason === "clickaway") {
       return;
     }
@@ -95,8 +92,10 @@ export const Contact = () => {
 
   return (
     <div className="flex flex-col items-center mt-5 gap-8">
-      <div className="text-3xl under-before relative pb-3">Contact Me</div>{" "}
-      <div className=" flex justify-between max-w-4xl gap-8 p-5 items-center">
+      <div className="text-3xl under-before relative pb-3 2xl:text-4xl">
+        Contact Me
+      </div>{" "}
+      <div className=" flex flex-col  justify-between max-w-4xl gap-8 p-5 items-center">
         <div className="border-[#1B263B] border p-5 px-10 rounded-lg">
           {" "}
           <motion.div

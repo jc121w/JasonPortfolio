@@ -83,7 +83,10 @@ export const Skills = () => {
   return (
     <motion.div className="p-10 ">
       <div className="flex flex-col justify-start items-center">
-        <h3 className="text-3xl under-before relative pb-3"> My Skills </h3>{" "}
+        <h3 className="text-3xl under-before relative pb-3 2xl:text-4xl">
+          {" "}
+          My Skills{" "}
+        </h3>{" "}
         <motion.div
           className="flex flex-wrap gap-3 justify-center mt-8"
           variants={variant1}

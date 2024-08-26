@@ -3,7 +3,7 @@ import React from "react";
 export const School = () => {
   const UMD = "/assets/umd.png";
   return (
-    <div className="border-[#1B263B] border p-5 flex items-end px-5 rounded-lg prose mt-5">
+    <div className="border-[#1B263B]  border p-5 flex items-center px-5 rounded-lg prose mt-5">
       <img className="w-auto h-40" src={UMD} alt="umd_logo" />
       <ul>
         <div className="font-semibold text-lg">

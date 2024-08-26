@@ -36,7 +36,7 @@ const Project = (props: ProjectProps) => {
     >
       <div className="flex flex-col gap-3">
         <div className="text-xl">{props.name}</div>
-        <div className="flex items-center justify-start gap-3">
+        <div className="flex items-center justify-start gap-3 flex-wrap">
           Made with:{" "}
           {props.skills.map((skill: Skill) => {
             return (
@@ -55,7 +55,7 @@ const Project = (props: ProjectProps) => {
       <div className="flex gap-4 ">
         {" "}
         <a
-          className="border-2 p-3 border-[#1B263B] rounded-3xl hover:scale-[1.15] hover:border-[#778DA9] transition-all duration-200 active:scale-100"
+          className="border-2 p-3 border-[#1B263B] rounded-3xl hover:scale-[1.15] hover:border-[#778DA9] transition-all duration-200 active:scale-105"
           href={props.yt}
           target="_blank"
           rel="noreferrer"
@@ -66,7 +66,7 @@ const Project = (props: ProjectProps) => {
           </div>
         </a>
         <a
-          className="border-2 p-3 border-[#1B263B] rounded-3xl hover:scale-[1.15] hover:border-[#778DA9] transition-all duration-200  active:scale-100"
+          className="border-2 p-3 border-[#1B263B] rounded-3xl hover:scale-[1.15] hover:border-[#778DA9] transition-all duration-200  active:scale-105"
           href={props.git}
           target="_blank"
           rel="noreferrer"
