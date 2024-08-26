@@ -67,7 +67,7 @@ export const NavBar = () => {
             About{" "}
           </Link>
           <a
-            href="/assets/Resume.pdf"
+            href="/assets/Resume-1.pdf"
             className="hover:scale-110 hover:text-[#778DA9] transition-transform duration-200 text-lg"
             target="_blank"
             rel="noreferrer"
