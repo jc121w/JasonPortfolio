@@ -81,7 +81,7 @@ export const Skills = () => {
   };
 
   return (
-    <motion.div className="p-10 ">
+    <motion.div className="p-10 mt-8">
       <div className="flex flex-col justify-start items-center">
         <h3 className="text-3xl under-before relative pb-3 2xl:text-4xl">
           {" "}

@@ -61,7 +61,7 @@ const downButtonVariants = {
 
 export const Hero = () => {
   return (
-    <div className="flex flex-col justify-start h-screen gap-20 mt-5 2xl:justify-center">
+    <div className="flex flex-col justify-start h-screen gap-14 mt-5 2xl:justify-center">
       <motion.img
         src="/assets/GradPic.jpg"
         alt="hero_image"
@@ -95,7 +95,7 @@ export const Hero = () => {
         initial="initial"
         animate="animateDown"
       >
-        <CircleArrowDown className="w-auto h-12 2xl:h-14 m-auto" />
+        <CircleArrowDown className="w-auto h-12 2xl:h-14 m-auto " />
       </motion.div>
     </div>
   );
