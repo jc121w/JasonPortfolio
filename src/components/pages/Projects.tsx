@@ -9,7 +9,9 @@ export const Projects = () => {
   const Rest = "/assets/rest.png";
   const slideControls = useAnimationControls();
   const [index, setIndex] = useState(0);
-
+  const GitHub = "/assets/GitHub.svg";
+  const YouTube = "/assets/YouTube.svg";
+  const Link = "/assets/Link.svg";
   const projectList = [
     <Project
       key="0"
@@ -33,20 +35,34 @@ export const Projects = () => {
         },
       ]}
       src={Flutter}
-      yt="https://youtube.com"
-      git="https://github.com/jc121w/MyCookBook"
       desc="MyCookBook is a recipe finder / meal plan designer full stack application. It's target audience is beginner cooks and college students who don't have much time or money. This app aims to help its users learn recipes and build a meal plan that fit their fitness, nutrient, and lifestyle needs. It does so seamlessly with its aesthetic and minimalistic design. Users can search recipes, add and delete recipes from their library, and organize recipes by price and nutrition. This project is still in its early stages with updates being actively made."
+      links={[
+        { link: ["https://youtube.com", "Demo"], icon: YouTube },
+        {
+          link: ["https://github.com/jc121w/MyCookBook", "Github"],
+          icon: GitHub,
+        },
+        {
+          link: ["https://my-cook-book-three.vercel.app/", "Link"],
+          icon: Link,
+        },
+      ]}
     />,
     <Project
       key="1"
       name="BookWorm"
       skills={[{ src: Flutter, name: "Flutter" }]}
       src={Flutter}
-      yt="https://youtu.be/HBdVtfTkBEk"
-      git="https://github.com/jc121w/BookWorm"
       desc="BookWorm is a book organizer app I collaborated with 3 group members to create. Users can use it to record and organize their thoughts on books they've read or are reading. Taking
     notes, searching unknown words, and adding books to a personalized
     library are among the many functionalities BookWorm has to offer."
+      links={[
+        { link: ["https://youtu.be/HBdVtfTkBEk", "Demo"], icon: YouTube },
+        {
+          link: ["https://github.com/jc121w/BookWorm", "Github"],
+          icon: GitHub,
+        },
+      ]}
     />,
     <Project
       key="2"
@@ -74,14 +90,19 @@ export const Projects = () => {
         },
       ]}
       src={Flutter}
-      yt="https://youtu.be/bqiwh_r4aCc"
-      git="https://github.com/jc121w/Animal-Shelter-Node-App"
       desc="AdoptAFriend is an app where you can adopt, view, and surrender pets. All the information is stored in a MongoDB collection and interacted with using JS."
+      links={[
+        { link: ["https://youtu.be/bqiwh_r4aCc", "Demo"], icon: YouTube },
+        {
+          link: ["https://github.com/jc121w/Animal-Shelter-Node-App", "Github"],
+          icon: GitHub,
+        },
+      ]}
     />,
   ];
 
   return (
-    <div className="flex flex-col items-center mt-5 gap-8">
+    <div className="flex flex-col items-center mt-5 gap-8 mb-20">
       <div className="text-3xl under-before relative pb-3 2xl:text-4xl">
         Projects
       </div>

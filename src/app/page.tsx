@@ -1,4 +1,5 @@
 "use client";
+import { About } from "@/components/pages/About";
 import Contact from "@/components/pages/Contact";
 import { Hero } from "@/components/pages/Hero";
 import { Projects } from "@/components/pages/Projects";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Projects />
+      <About />
       <Contact />
     </main>
   );

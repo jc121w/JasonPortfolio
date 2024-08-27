@@ -4,14 +4,17 @@ interface Skill {
   src: string;
   name: string;
 }
+interface Link {
+  link: string[];
+  icon: string;
+}
 
 interface ProjectProps {
   name: string;
   skills: Skill[];
   src: string;
   desc: string;
-  yt: string;
-  git: string;
+  links: Link[];
 }
 
 const projectVariants = {
@@ -53,29 +56,21 @@ const Project = (props: ProjectProps) => {
         <div className="prose ">{props.desc}</div>
       </div>
       <div className="flex gap-4 ">
-        {" "}
-        <a
-          className="border-2 p-3 border-[#1B263B] rounded-3xl hover:scale-[1.15] hover:border-[#778DA9] transition-all duration-200 active:scale-105"
-          href={props.yt}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="flex items-center gap-2">
-            <img src={YouTube} alt="YouTube" />
-            <span>Demo</span>
-          </div>
-        </a>
-        <a
-          className="border-2 p-3 border-[#1B263B] rounded-3xl hover:scale-[1.15] hover:border-[#778DA9] transition-all duration-200  active:scale-105"
-          href={props.git}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="flex items-center gap-1">
-            <img src={GitHub} alt="GitHub" />
-            <span> Github</span>
-          </div>{" "}
-        </a>
+        {props.links.map((elem, index) => {
+          return (
+            <a
+              className="border-2 p-3 border-[#1B263B] rounded-3xl hover:scale-[1.15] hover:border-[#778DA9] transition-all duration-200 active:scale-105"
+              href={elem.link[0]}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="flex items-center gap-2">
+                <img src={elem.icon} alt="YouTube" />
+                <span>{elem.link[1]}</span>
+              </div>
+            </a>
+          );
+        })}{" "}
       </div>
     </motion.div>
   );

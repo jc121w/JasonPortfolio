@@ -53,19 +53,12 @@ export const NavBar = () => {
           className="z-30 w-full h-screen fixed bg-[#E0E1DD] top-0 left-0 flex flex-col justify-center items-center"
           variants={variants}
         >
-          <Links toggle={toggleBar} />
+          <Links />
         </motion.div>
         <HamburgerButton toggle={toggleBar} />
       </motion.div>
       <div className="hidden sm:block md:block">
         <div className="flex justify-around gap-5 select-none">
-          <Link
-            href="/about"
-            className="hover:scale-110 hover:text-[#778DA9] transition-transform duration-200 text-lg"
-          >
-            {" "}
-            About{" "}
-          </Link>
           <a
             href="/assets/Resume-1.pdf"
             className="hover:scale-110 hover:text-[#778DA9] transition-transform duration-200 text-lg"

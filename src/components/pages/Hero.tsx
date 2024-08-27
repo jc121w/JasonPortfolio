@@ -61,35 +61,37 @@ const downButtonVariants = {
 
 export const Hero = () => {
   return (
-    <div className="flex flex-col justify-start h-screen gap-14 mt-5 2xl:justify-center">
-      <motion.img
-        src="/assets/GradPic.jpg"
-        alt="hero_image"
-        className="rounded-full w-[400px] h-[400px] object-cover 2xl:w-[500px] 2xl:h-[500px]"
-        variants={picVariant}
-        animate="animate"
-        initial="initial"
-      />
-      <motion.div
-        variants={variants}
-        whileInView="animate"
-        initial="initial"
-        className="text-lg"
-        viewport={{ once: true }}
-      >
-        <motion.h3
-          variants={textVariant}
-          className="text-3xl pb-3 2xl:text-5xl"
+    <div className="flex flex-col justify-center h-screen gap-20 mt-5 2xl:gap-36 2xl:justify-center">
+      <div className="flex flex-col justify-start gap-14">
+        <motion.img
+          src="/assets/GradPic.jpg"
+          alt="hero_image"
+          className="rounded-full w-[400px] h-[400px] object-cover 2xl:w-[500px] 2xl:h-[500px]"
+          variants={picVariant}
+          animate="animate"
+          initial="initial"
+        />
+        <motion.div
+          variants={variants}
+          whileInView="animate"
+          initial="initial"
+          className="text-lg"
+          viewport={{ once: true }}
         >
-          Hi, I'm Jason.{" "}
-        </motion.h3>
-        <motion.p variants={textVariant} className="text-pretty 2xl:text-xl">
-          I'm a Software Engineer based in College Park, MD. I am a{" "}
-          <b>Spring 2024</b> new grad with a <b>BS in Computer Science </b>
-          from the <b>University of Maryland College Park</b> and am currently
-          looking for New Grad positions!
-        </motion.p>
-      </motion.div>
+          <motion.h3
+            variants={textVariant}
+            className="text-3xl pb-3 2xl:text-5xl"
+          >
+            Hi, I'm Jason.{" "}
+          </motion.h3>
+          <motion.p variants={textVariant} className="text-pretty 2xl:text-xl">
+            I'm a Software Engineer based in College Park, MD. I am a{" "}
+            <b>Spring 2024</b> new grad with a <b>BS in Computer Science </b>
+            from the <b>University of Maryland College Park</b> and am currently
+            looking for New Grad positions!
+          </motion.p>
+        </motion.div>
+      </div>
       <motion.div
         variants={downButtonVariants}
         initial="initial"

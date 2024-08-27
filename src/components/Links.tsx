@@ -13,33 +13,17 @@ const linkVariants = {
   open: { x: 0, opacity: 1 },
   close: { x: -50, opacity: 0 },
 };
-type HamburgerButtonProps = {
-  toggle: () => void;
-};
-const Links: React.FC<HamburgerButtonProps> = ({ toggle }) => {
+
+const Links = () => {
   const GitHub = "/assets/GitHub.svg";
   const LinkedIn = "/assets/linkedin.svg";
-  const router = useRouter();
 
-  const pushLink = () => {
-    router.push("/about");
-    toggle();
-  };
   return (
     <motion.div
       variants={variants}
       transition={{ duration: 3, ease: "linear" }}
       className="flex flex-col justify-around gap-16 select-none"
     >
-      <motion.div
-        variants={linkVariants}
-        whileHover={{ scale: 1.1, color: "#778DA9" }}
-        whileTap={{ scale: 0.97 }}
-        onClick={pushLink}
-        className="text-3xl cursor-pointer"
-      >
-        About
-      </motion.div>
       <motion.a
         href="/assets/Resume.pdf"
         className="text-3xl"
