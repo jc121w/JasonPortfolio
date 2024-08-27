@@ -23,7 +23,7 @@ const pathVariants = {
   animate: {
     opacity: 1,
     pathLength: 1,
-    transition: { duration: 2.5, ease: "easeInOut", delay: 2.5 },
+    transition: { duration: 2.5, ease: "easeInOut", delay: 1 },
   },
   initial: {
     opacity: 0,
