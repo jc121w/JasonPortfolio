@@ -89,6 +89,7 @@ export const About = () => {
                 initial="initial"
                 variants={buttonVariants}
                 className="absolute md:-right-28 md:top-1/2 -top-0 right-16"
+                key={currInd}
               >
                 <ArrowRightSquare
                   className=" w-auto h-10 cursor-pointer transition-all duration-100 hover:scale-110 active:scale-105"

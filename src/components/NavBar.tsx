@@ -60,7 +60,7 @@ export const NavBar = () => {
       <div className="hidden sm:block md:block">
         <div className="flex justify-around gap-5 select-none">
           <a
-            href="/assets/Resume-1.pdf"
+            href="/assets/Resume.pdf"
             className="hover:scale-110 hover:text-[#778DA9] transition-transform duration-200 text-lg"
             target="_blank"
             rel="noreferrer"
