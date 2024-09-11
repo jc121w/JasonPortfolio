@@ -63,6 +63,7 @@ const Project = (props: ProjectProps) => {
               href={elem.link[0]}
               target="_blank"
               rel="noreferrer"
+              key={index}
             >
               <div className="flex items-center gap-2">
                 <img src={elem.icon} alt="YouTube" />

@@ -33,9 +33,10 @@ export const CourseBox = () => {
       viewport={{ once: true }}
       className="p-5 rounded-xl md:grid-cols-2 sm:grid-cols-1 grid gap-6 mt-10  bg-[#E0E1DD]"
     >
-      {courses.map((courseName) => {
+      {courses.map((courseName, index) => {
         return (
           <motion.div
+            key={index}
             variants={courseVariants}
             whileHover={{ scale: 1.07 }}
             className="border border-[#1B263B] rounded-xl bg-[#778DA9] w-full h-fit text-[#0D1B2A] p-3 text-center"

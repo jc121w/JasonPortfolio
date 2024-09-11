@@ -30,6 +30,7 @@ export const NavBar = () => {
       },
     },
   };
+
   const toggleBar = () => {
     setIsOpen(!isOpen);
   };
