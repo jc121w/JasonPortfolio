@@ -6,7 +6,7 @@ import { NavBar } from "@/components/NavBar";
 const inter = Roboto_Slab({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "jchen.vercel",
+  title: "Jason Chen",
   description:
     "Hi, this is my portfolio created with Next.js and deployed through Vercel.",
 };
